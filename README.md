@@ -52,3 +52,31 @@ graph TD
 🟢 **The Business Result - (The Commercial ROI)**
 The manual software delivery bottleneck was permanently dismantled. Operational deployment latency plummeted from hours of risky manual staging down to a completely automated **21-second cloud delivery pipeline**. Human configuration errors fell to absolute zero. By replacing manual infrastructure updates with this secure GitOps delivery engine, the business protects critical billing margins and saves an estimated **$74,000 USD/year in specialized engineering maintenance overhead**, empowering leadership to scale intake capacities seamlessly.
 
+
+
+
+## 🛠️ ON-SITE FIELD DEPLOYMENT GUIDE
+
+This automated continuous delivery framework is engineered for idempotent cloud-native deployment on-site using GitHub Actions orchestration runner engines.
+
+```bash
+# 1. Clone the master automation delivery architecture assets onto your terminal
+git clone https://github.com && cd GitOps-Container-Deployment-Pipeline---Automation
+
+# 2. Locally verify the declarative business operations metadata schema syntax
+python3 -m json.tool workflows/onboarding.json
+
+# 3. Force-trigger a local runtime simulation block to validate log streams
+python3 core_ops/app.py
+```
+
+## 🚨 DISASTER RECOVERY & FIELD TROUBLESHOOTING
+
+### Symptom: Pipeline Build Failure or Invalid JSON Token Array Error
+If an operator updates an operational workflow file (`onboarding.json`) with an unclosed bracket or a missing trailing comma, the compiler will fail, halting live deployment releases.
+*   *Action:* Check local schema validity instantly by running: `python3 -m json.tool workflows/onboarding.json`. Correct any highlighted line syntax drift and push the clean layout back to the main branch.
+
+### Symptom: Authentication Handshake Timeouts with Container Registry (GHCR.io)
+This happens when the temporary cryptographic token generated during the push cycle expires or undergoes network clipping.
+*   *Action:* Operator intervention is not required. The automated permissions block (`packages: write`) will dynamically request a self-healing, single-use token handshake on the next sequential git event trigger.
+
