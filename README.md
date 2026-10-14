@@ -61,7 +61,7 @@ This automated continuous delivery framework is engineered for idempotent cloud-
 
 ```bash
 # 1. Clone the master automation delivery architecture assets onto your terminal
-git clone https://github.com && cd GitOps-Container-Deployment-Pipeline---Automation
+git clone https://github.com/mkmd-systems1git/GitOps-Container-Deployment-Pipeline---Automation && cd GitOps-Container-Deployment-Pipeline---Automation
 
 # 2. Locally verify the declarative business operations metadata schema syntax
 python3 -m json.tool workflows/onboarding.json
